@@ -1,0 +1,87 @@
+/* Estilos generales */
+.principal {
+    font-family: Arial, sans-serif;
+    padding-top: 60px; 
+    background-color: #f8d9e4;
+}
+
+/* Contenedor del header */
+.contenedor1 {
+    display: flex;
+    justify-content: center;
+    background-color: #ba77ce;
+    color: white;
+    padding: 10px 0;
+}
+
+header h4 {
+    margin: 0;
+}
+
+
+.contenedor-proyectos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, auto); 
+    gap: 30px; 
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.proyecto {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: none; 
+}
+
+.proyecto h5 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+
+.proyecto img {
+    width: 100%;
+    height: 200px; 
+    object-fit: contain; 
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+
+.ver-enlace {
+    display: inline-block;
+    background-color: #ba77ce;
+    color: white;
+    padding: 12px 15px; 
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 100%; 
+    box-sizing: border-box; 
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.ver-enlace:hover {
+    background-color: #9a56a2;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .contenedor-proyectos {
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(2, auto); 
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor-proyectos {
+        grid-template-columns: 1fr; 
+        grid-template-rows: repeat(2, auto); 
+    }
+}
