@@ -1,11 +1,11 @@
-/* Estilos generales */
+
 .principal {
     font-family: Arial, sans-serif;
     padding-top: 60px; 
     background-color: #f8d9e4;
 }
 
-/* Contenedor del header */
+
 .contenedor1 {
     display: flex;
     justify-content: center;
@@ -71,7 +71,7 @@ header h4 {
     background-color: #9a56a2;
 }
 
-/* Estilos responsivos */
+
 @media (max-width: 768px) {
     .contenedor-proyectos {
         grid-template-columns: repeat(2, 1fr); 
